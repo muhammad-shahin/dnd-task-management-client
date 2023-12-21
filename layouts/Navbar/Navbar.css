@@ -1,0 +1,31 @@
+nav a.active {
+  background: linear-gradient(100deg, #3fbefd, #89cff3, #c0b0fc, #aa94f7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  color: white;
+}
+nav a.active:hover {
+  background: linear-gradient(45deg, #3fbefd, #89cff3, #c0b0fc, #aa94f7);
+}
+/* custom underline */
+nav a.active::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  transition: all 0.5s ease-in;
+  font-size: 24px;
+  transition: all 0.5s linear;
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  nav a.active {
+    padding: 4px 8px;
+  }
+}
+.grad-bg {
+  @apply hover:bg-gradient-to-r hover:from-[#3fbefd] hover:to-[#aa94f7] duration-500;
+}
+.grad-btn {
+  @apply bg-gradient-to-r from-[#3fbefd] hover:to-[#aa94f7] duration-500;
+}
