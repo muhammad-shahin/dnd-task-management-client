@@ -37,14 +37,14 @@ const Home = () => {
         <OverlapImage />
       </div>
 
-      {/* improve your section */}
-      <div className='container mx-auto lg:my-28 my-8'>
+      {/* categories we have section */}
+      {/* <div className='container mx-auto lg:my-28 my-8'>
         <Heading
           title='Category We Have'
           subTitle='Explore Assignment By Category'
         />
         <Categories />
-      </div>
+      </div> */}
 
       {/* FAQ section */}
       <div className='container mx-auto lg:my-28 my-8'>

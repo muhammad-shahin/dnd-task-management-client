@@ -1,27 +1,27 @@
 [
   {
-    "question": "What is the purpose of this website?",
-    "answer": "This website is designed for online group study with friends. You can create, complete, and grade assignments with your study buddies.",
+    "question": "What is the main purpose of DnD Task Management?",
+    "answer": "DnD Task Management is designed to streamline your workflow by helping you organize, prioritize, and complete tasks efficiently. It's your go-to platform for effective task management.",
     "id": 1
   },
   {
-    "question": "How do I register an account?",
-    "answer": "You can register by providing your name, email, and password. We also offer social login options like Google and Github.",
+    "question": "How can I create a new task?",
+    "answer": "Creating a task is easy! Navigate to the task creation section, specify the title, description, deadline, and priority. Hit 'Add Task' to seamlessly include it in your to-do list.",
     "id": 2
   },
   {
-    "question": "Can I delete assignments created by other users?",
-    "answer": "No, you can only delete assignments that you have created. Assignments created by others are not deletable by you.",
+    "question": "Is it possible to change the priority of a task?",
+    "answer": "Absolutely! Utilize the intuitive drag-and-drop functionality to change a task's priority. Move it from 'To-Do' to 'Ongoing' or 'Completed' effortlessly.",
     "id": 3
   },
   {
-    "question": "What happens when I complete an assignment?",
-    "answer": "When you complete an assignment, it will be marked as 'completed' and your performance will be recorded.",
+    "question": "Can I delete a task after completion?",
+    "answer": "Yes, you have the flexibility to delete tasks. Once a task is completed, you can choose to keep your task list tidy by removing it from the dashboard.",
     "id": 4
   },
   {
-    "question": "How can I track my progress?",
-    "answer": "You can monitor your progress using insightful analytics that show assignment completion, study hours, and performance metrics.",
+    "question": "How does the notification system work?",
+    "answer": "Our notification system keeps you informed about task assignments, updates, and approaching deadlines through convenient toast notifications. Stay on top of your tasks!",
     "id": 5
   }
 ]
