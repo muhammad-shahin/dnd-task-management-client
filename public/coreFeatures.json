@@ -1,40 +1,40 @@
 [
   {
-    "frontTitle": "Study Groups",
-    "frontDescription": "Collaborate with friends in study groups to enhance your learning experience. Share knowledge, tackle challenges together, and stay motivated. Learning is more fun with friends.",
+    "frontTitle": "Collaborative Task Management",
+    "frontDescription": "Work seamlessly with your team on tasks. Share knowledge, tackle challenges together, and stay motivated. Task management is more efficient when it's a collaborative effort.",
     "frontIcon": "FaUsers",
     "backTitle": "Real-Time Collaboration",
-    "backDescription": "Engage in real-time collaboration with your study buddies. Discuss assignments, ask questions, and provide feedback instantly. Learning together has never been easier.",
+    "backDescription": "Experience real-time collaboration with your team. Discuss tasks, ask questions, and provide feedback instantly. Task management together has never been easier.",
     "backIcon": "FaComments",
     "frontImage": "https://i.ibb.co/qy10jf6/flipcard1.jpg",
     "backImage": "https://i.ibb.co/1QDRKyT/flipcard2.jpg"
   },
   {
-    "frontTitle": "Create Assignments",
-    "frontDescription": "Craft and manage assignments effortlessly. Specify tasks, set deadlines, and choose the difficulty level. Take control of your learning journey.",
+    "frontTitle": "Intuitive Task Creation",
+    "frontDescription": "Create and manage tasks effortlessly. Specify titles, descriptions, and deadlines. Take control of your task management journey.",
     "frontIcon": "FaTasks",
-    "backTitle": "Interactive Learning",
-    "backDescription": "Immerse yourself in an interactive learning environment. Explore dynamic content, quizzes, and engaging study materials. Learning is not just reading; it's experiencing.",
+    "backTitle": "Interactive Workflow",
+    "backDescription": "Immerse yourself in an interactive workflow environment. Explore dynamic content, progress analytics, and engaging task materials. Task management is not just organizing; it's experiencing.",
     "backIcon": "FaPlayCircle",
     "frontImage": "https://i.ibb.co/99StrhB/flipcard3.jpg",
     "backImage": "https://i.ibb.co/4s9Bpw2/flipcard4.jpg"
   },
   {
     "frontTitle": "User Profiles",
-    "frontDescription": "Create your personalized user profile and connect with friends. Showcase your achievements, assignments, and stay updated with your study group.",
+    "frontDescription": "Create your personalized user profile and connect with collaborators. Showcase your achievements, tasks, and stay updated with your team.",
     "frontIcon": "FaUser",
     "backTitle": "Achievements",
-    "backDescription": "Earn badges and achievements as you progress. Compete on the leaderboard and stay motivated to reach new milestones in your learning journey.",
+    "backDescription": "Earn badges and achievements as you progress. Compete on the leaderboard and stay motivated to reach new milestones in your task management journey.",
     "backIcon": "FaMedal",
     "frontImage": "https://i.ibb.co/bLPq5Zq/flipcard5.jpg",
     "backImage": "https://i.ibb.co/VmyssPn/flipcard6.jpg"
   },
   {
     "frontTitle": "Responsive Design",
-    "frontDescription": "Access our platform on any device - mobile, tablet, or desktop. Enjoy a seamless learning experience wherever you are.",
+    "frontDescription": "Access our platform on any device - mobile, tablet, or desktop. Enjoy a seamless task management experience wherever you are.",
     "frontIcon": "FaMobileAlt",
     "backTitle": "Community Engagement",
-    "backDescription": "Join a vibrant online community of students and educators. Share insights, seek assistance, and explore a variety of study groups tailored to your interests.",
+    "backDescription": "Join a vibrant online community of task managers. Share insights, seek assistance, and explore a variety of task groups tailored to your interests.",
     "backIcon": "FaUserFriends",
     "frontImage": "https://i.ibb.co/xFVMJWn/flipcard7.jpg",
     "backImage": "https://i.ibb.co/fxg5Q20/flipcard8.jpg"
