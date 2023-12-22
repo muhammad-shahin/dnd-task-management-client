@@ -4,71 +4,67 @@ const PerformanceCount = () => {
   return (
     <div className='flex-cen space-x-0'>
       <CountAnimation
-        number={4}
+        number={60}
+        delay={2000}
+        onScroll={false}
+        afterText='K+'
+        style='text-center gradient-text lg:text-6xl text-4xl font-bold lg:w-[180px] xl:w-[250px]'
+      >
+        <div>
+          <p className='lg:text-lg text-[12px] text-center capitalize '>
+            Student
+          </p>
+        </div>
+      </CountAnimation>
+      <CountAnimation
+        number={4000}
         delay={1000}
         onScroll={false}
-        beforeText='+'
-        afterText='M'
+        afterText='+'
         style='text-center gradient-text lg:text-6xl text-4xl font-bold lg:w-[180px] xl:w-[250px]'
       >
         <div>
           <p className='lg:text-lg text-[12px] text-center capitalize'>
-            community members
+            softwere developers
           </p>
         </div>
       </CountAnimation>
       <CountAnimation
-        number={19}
+        number={1900}
         delay={1000}
         onScroll={false}
-        beforeText='+'
-        afterText='M'
+        afterText='+'
         style='text-center gradient-text lg:text-6xl text-4xl font-bold lg:w-[180px] xl:w-[250px]'
       >
         <div>
           <p className='lg:text-lg text-[12px] text-center capitalize '>
-            study sessions
+            Corporate Professionals
           </p>
         </div>
       </CountAnimation>
       <CountAnimation
-        number={4}
+        number={6000}
         delay={1000}
         onScroll={false}
-        beforeText='+'
-        afterText='M'
+        afterText='+'
         style='text-center gradient-text lg:text-6xl text-4xl font-bold lg:w-[180px] xl:w-[250px]'
       >
         <div>
           <p className='lg:text-lg text-[12px] text-center capitalize '>
-            study goal reached
+            Bankers
           </p>
         </div>
       </CountAnimation>
       <CountAnimation
-        number={215}
+        number={2150}
         delay={2000}
         onScroll={false}
-        beforeText='+'
+        afterText='+'
         style='text-center gradient-text lg:text-6xl text-4xl font-bold lg:w-[180px] xl:w-[250px]'
       >
         <div>
           <p className='lg:text-lg text-[12px] text-center capitalize '>
-            countries
-          </p>
-        </div>
-      </CountAnimation>
-      <CountAnimation
-        number={4.8}
-        delay={2000}
-        onScroll={false}
-        beforeText='+'
-        afterText='/5'
-        style='text-center gradient-text lg:text-6xl text-4xl font-bold lg:w-[180px] xl:w-[250px]'
-      >
-        <div>
-          <p className='lg:text-lg text-[12px] text-center capitalize '>
-            positive reviews
+            Game Developers
           </p>
         </div>
       </CountAnimation>

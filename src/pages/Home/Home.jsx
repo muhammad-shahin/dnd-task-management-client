@@ -22,7 +22,7 @@ const Home = () => {
 
       {/* performance count section */}
       <div className='container mx-auto lg:my-28 my-8'>
-        <Heading title='Our Performance Snapshot' />
+        <Heading title='Who use our app?' />
         <PerformanceCount />
       </div>
 
