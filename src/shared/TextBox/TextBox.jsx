@@ -9,6 +9,7 @@ const TextBox = ({
   message,
   readOnly,
   defaultValue,
+  register,
 }) => {
   return (
     <div className='flex flex-col gap-1 w-full'>
@@ -30,6 +31,7 @@ const TextBox = ({
           required={isRequired}
           readOnly={readOnly}
           defaultValue={defaultValue}
+          {...register}
         ></textarea>
       </div>
       {message && (
@@ -41,14 +43,15 @@ const TextBox = ({
   );
 };
 TextBox.propTypes = {
-  label: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  name: PropTypes.string,
+  placeholder: PropTypes.string,
   value: PropTypes.string,
   message: PropTypes.string,
   handleChange: PropTypes.func,
   isRequired: PropTypes.bool,
   readOnly: PropTypes.bool,
   defaultValue: PropTypes.string,
+  register: PropTypes.any,
 };
 export default TextBox;

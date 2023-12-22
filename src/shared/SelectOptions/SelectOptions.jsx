@@ -13,6 +13,7 @@ const SelectOptions = ({
   defaultValue,
   className,
   containerClassName,
+  register,
 }) => {
   const [open, setOpen] = useState(false);
   return (
@@ -30,6 +31,7 @@ const SelectOptions = ({
           name={name}
           onChange={handleChange}
           required={isRequired}
+          {...register}
           onClick={() => {
             setOpen(!open);
           }}
@@ -79,6 +81,7 @@ SelectOptions.propTypes = {
   defaultValue: PropTypes.bool,
   className: PropTypes.string,
   containerClassName: PropTypes.string,
+  register: PropTypes.any,
 };
 
 export default SelectOptions;

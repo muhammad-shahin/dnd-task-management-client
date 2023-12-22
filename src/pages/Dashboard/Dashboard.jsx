@@ -1,13 +1,26 @@
 import { FaPlus } from 'react-icons/fa6';
 import TaskCard from '../../components/TaskCard/TaskCard';
 import PrimaryButton from '../../shared/PrimaryButton/PrimaryButton';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import CustomModal from '../../components/CustomModal/CustomModal';
 import SelectOptions from '../../shared/SelectOptions/SelectOptions';
 import Input from '../../components/Input/Input';
+import { useForm } from 'react-hook-form';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Dashboard = () => {
+  const { user } = useContext(AuthContext);
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
   const [modalStatus, setModalStatus] = useState(false);
+  const onSubmit = (data) => {
+    const newTask = { taskOf: user?.uid, status: 'todo', ...data };
+    console.log(newTask);
+  };
   return (
     <section className='mx-[5%] lg:container lg:mx-auto py-20'>
       {/* add new task button */}
@@ -18,6 +31,7 @@ const Dashboard = () => {
           handleOnClick={() => setModalStatus(!modalStatus)}
         />
       </div>
+      {/* todo list */}
       <div className='py-8 space-y-3'>
         <p className='md:text-xl text-sm md:font-medium max-w-sm group-hover:text-slate-100 text-primary duration-500 uppercase'>
           TODO Lists
@@ -60,17 +74,29 @@ const Dashboard = () => {
         setCustomModalStatus={setModalStatus}
         title={'Add New Task'}
       >
-        <form className='text-left space-y-4 md:min-w-[480px]'>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className='text-left space-y-4 md:min-w-[480px]'
+        >
           <Input
             placeholder='Add Task Title'
             labelText='Task Title'
             isRequired={true}
+            register={{ ...register('taskTitle') }}
           />
           <Input
             placeholder='Add Task Description'
             labelText='Task Description'
             isRequired={true}
             type='textbox'
+            register={{ ...register('taskDesc') }}
+          />
+          <Input
+            placeholder='Add Task Deadline'
+            labelText='Deadline'
+            isRequired={true}
+            type='date'
+            register={{ ...register('taskDeadline') }}
           />
           <SelectOptions
             defaultOption='Select Priority'
@@ -79,6 +105,7 @@ const Dashboard = () => {
             containerClassName={'my-0 w-auto'}
             label='Set Priority'
             isRequired={true}
+            register={{ ...register('taskPriority') }}
           />
           <div className='w-fit mx-auto'>
             <PrimaryButton

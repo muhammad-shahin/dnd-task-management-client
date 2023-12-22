@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { createContext, useEffect, useState } from 'react';
-import { auth } from '../configs/firebase.config';
 import PropTypes from 'prop-types';
 import {
   GoogleAuthProvider,
@@ -12,6 +11,7 @@ import {
 } from 'firebase/auth';
 import Swal from 'sweetalert2';
 import useAxios from '../hooks/useAxios';
+import { auth } from '../Configs/firebase.config';
 
 export const AuthContext = createContext({});
 
