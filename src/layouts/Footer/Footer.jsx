@@ -20,13 +20,9 @@ const Footer = () => {
           <p className='font-semibold text-lg'>Site Maps</p>
           <Link className='font-medium text-slate-500'>Home</Link>
           <Link className='font-medium text-slate-500'>About</Link>
-          <Link className='font-medium text-slate-500'>Conatct</Link>
-          <Link className='font-medium text-slate-500'>Create Assignment</Link>
-          <Link className='font-medium text-slate-500'>My Assignment</Link>
-          <Link className='font-medium text-slate-500'>All Assignment</Link>
-          <Link className='font-medium text-slate-500'>
-            Submitted Assignment
-          </Link>
+          <Link className='font-medium text-slate-500'>Contact</Link>
+          <Link className='font-medium text-slate-500'>Create Task</Link>
+          <Link className='font-medium text-slate-500'>My Todo List</Link>
         </div>
 
         {/* Stay Connected */}
@@ -53,7 +49,7 @@ const Footer = () => {
           <Link className='font-medium text-slate-500'>Data Usage</Link>
         </div>
 
-        {/* Socual Icons */}
+        {/* Social Icons */}
         <div className='flex flex-col lg:justify-start justify-center gap-3'>
           <p className='font-semibold text-lg'>Follow Us On</p>
           <SocialIcons />
@@ -62,7 +58,7 @@ const Footer = () => {
       <div className='text-center mt-8 pb-4'>
         <p className='text-gray-500 text-md'>
           &copy; Copyright 2021-2023{' '}
-          <span className='text-blue-500'>RATE MY PROJECT</span>
+          <span className='text-blue-500'>DND TASK MANAGEMENT</span>
         </p>
       </div>
     </footer>
