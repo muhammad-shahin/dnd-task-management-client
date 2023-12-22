@@ -3,6 +3,9 @@ import { useState } from 'react';
 
 const TaskCard = ({ cardData, icon }) => {
   const [priority, setPriority] = useState('Low' || cardData?.taskPriority);
+  const date = new Date(cardData?.taskDeadline);
+  const options = { day: 'numeric', month: 'short', year: 'numeric' };
+  const formattedDate = date.toLocaleDateString('en-US', options);
   return (
     <div className='rounded-lg border-2 border-primary gradient-anim p-5 w-fit space-y-3 bg-transparent max-w-[450px] cursor-pointer flex justify-center items-start flex-col hover:text-white gradient-text duration-300 group'>
       {/* <div className='round-bg mx-auto'>{icon}</div> */}
@@ -15,7 +18,7 @@ const TaskCard = ({ cardData, icon }) => {
       <hr className='text-[#4c6ffa] w-full h-[4px]' />
       <div className='flex justify-between items-center w-full'>
         <p className='md:text-base text-sm md:font-medium max-w-sm group-hover:text-slate-100 text-primary duration-500'>
-          Deadline : 14 Dec, 2023
+          Deadline : {formattedDate}
         </p>
         <select
           name=''

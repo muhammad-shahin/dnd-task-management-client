@@ -85,7 +85,7 @@ const Dashboard = () => {
         </p>
         <hr className='text-[#4c6ffa] w-full h-[4px]' />
       </div>
-      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center flex-wrap gap-5'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center md:items-start items-center flex-wrap gap-5'>
         {todoTasks?.length !== 0 ? (
           todoTasks?.map((task) => (
             <TaskCard
@@ -107,7 +107,7 @@ const Dashboard = () => {
         </p>
         <hr className='text-[#4c6ffa] w-full h-[4px]' />
       </div>
-      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center flex-wrap gap-5'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center md:items-start items-center flex-wrap gap-5'>
         {ongoingTasks?.length !== 0 ? (
           ongoingTasks?.map((task) => (
             <TaskCard
@@ -129,7 +129,7 @@ const Dashboard = () => {
         </p>
         <hr className='text-[#4c6ffa] w-full h-[4px]' />
       </div>
-      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center flex-wrap gap-5'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center md:items-start items-center flex-wrap gap-5'>
         {completedTasks?.length !== 0 ? (
           completedTasks?.map((task) => (
             <TaskCard
