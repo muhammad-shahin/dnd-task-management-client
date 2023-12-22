@@ -53,7 +53,7 @@ const Home = () => {
       </div>
       {/* FAQ section */}
       <div className='lg:my-28 my-8'>
-        <GetStartedBanner title='What are you waiting for? Join the study team!' />
+        <GetStartedBanner title='What are you waiting for? Join & Boost Your Productivity!' />
       </div>
       {/* footer section */}
       <Footer />
