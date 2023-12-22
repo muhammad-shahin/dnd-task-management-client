@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 
-const TaskCard = ({ cardData, icon }) => {
-  const [priority, setPriority] = useState('Low' || cardData?.taskPriority);
+// eslint-disable-next-line no-unused-vars
+const TaskCard = ({ cardData, icon, handleUpdateTask }) => {
   const date = new Date(cardData?.taskDeadline);
   const options = { day: 'numeric', month: 'short', year: 'numeric' };
   const formattedDate = date.toLocaleDateString('en-US', options);
@@ -27,7 +26,9 @@ const TaskCard = ({ cardData, icon }) => {
             (cardData?.taskPriority === 'Moderate' && 'bg-orange-400') ||
             (cardData?.taskPriority === 'High' && 'bg-red-500')
           }`}
-          onChange={(e) => setPriority(e.target.value)}
+          onChange={(e) =>
+            handleUpdateTask({ taskPriority: e.target.value }, cardData?._id)
+          }
         >
           {cardData?.taskPriority && (
             <option value={cardData?.taskPriority}>
@@ -46,6 +47,7 @@ const TaskCard = ({ cardData, icon }) => {
 TaskCard.propTypes = {
   cardData: PropTypes.object,
   icon: PropTypes.object,
+  handleUpdateTask: PropTypes.func,
 };
 
 export default TaskCard;

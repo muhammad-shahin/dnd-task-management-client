@@ -57,6 +57,18 @@ const Dashboard = () => {
       });
   };
 
+  // handle priority change of tasks
+  const handleUpdateTask = (updatedInfo, id) => {
+    console.log(updatedInfo);
+    secureAxios
+      .put(`/update-task/${id}`, updatedInfo)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   if (!isLoading && !isPending) {
     const todo = allTasks.filter((task) => task.status === 'todo');
     todoTasks = todo;
@@ -91,6 +103,7 @@ const Dashboard = () => {
             <TaskCard
               key={task._id}
               cardData={task}
+              handleUpdateTask={handleUpdateTask}
             />
           ))
         ) : (

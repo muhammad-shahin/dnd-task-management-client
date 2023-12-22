@@ -30,7 +30,7 @@ const FileUpload = ({ name, label, handleChange, isRequired, message }) => {
     setSuccess(`Uploading... ${name} Please Wait`);
     setDisableUpload(false);
     const randomNumber = Math.floor(Math.random() * 100);
-    const imageRef = ref(storage, `RMP/profilePictures/${randomNumber}${name}`);
+    const imageRef = ref(storage, `DTM/profilePictures/${randomNumber}${name}`);
     uploadBytes(imageRef, file).then((snapshot) => {
       getDownloadURL(snapshot.ref)
         .then((url) => {
