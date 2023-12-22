@@ -1,7 +1,6 @@
 import PrimaryButton from '../../shared/PrimaryButton/PrimaryButton';
-import OutlineButton from '../../shared/OutlineButton/OutlineButton';
 import Lottie from 'lottie-react';
-import bannerAnim from '../../assets/Animation/banner-animation.json';
+import bannerAnim from '../../assets/Animation/task-anim.json';
 import ParticlesBackground from '../ParticlesBackground/ParticlesBackground';
 const Banner = () => {
   return (
@@ -22,9 +21,8 @@ const Banner = () => {
           excel in your studies. Collaborate with friends, create assignments,
           and achieve academic success, all in one place.
         </p>
-        <div className='flexme '>
-          <PrimaryButton text='Get Started' />
-          <OutlineButton text='Learn More' />
+        <div className='flexme'>
+          <PrimaryButton text="Let's Explore" />
         </div>
       </div>
 

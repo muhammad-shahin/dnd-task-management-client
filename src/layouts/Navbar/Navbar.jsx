@@ -7,7 +7,7 @@ import UserProfile from '../../components/UserProfile/UserProfile';
 import { AuthContext } from '../../providers/AuthProvider';
 import { VscAccount } from 'react-icons/vsc';
 import DarkTheme from '../../components/DarkTheme/DarkTheme';
-import logo from '../../assets/logo/rate-my-project-logo.png';
+import logo from '../../assets/logo/site-logo.png';
 import { BiExit } from 'react-icons/bi';
 
 const Navbar = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
             src={logo}
             alt='Rate My Project Logo'
             loading='lazy'
-            className='lg:w-[150px] w-[100px]'
+            className='lg:w-[200px] w-[150px]'
           />
         </div>
         {/* nav items */}

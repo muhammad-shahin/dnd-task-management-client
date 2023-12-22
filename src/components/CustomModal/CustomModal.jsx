@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import logo from '../../assets/logo/rate-my-project-logo.png';
+import logo from '../../assets/logo/site-logo.png';
 
 const CustomModal = ({
   modalStatus,

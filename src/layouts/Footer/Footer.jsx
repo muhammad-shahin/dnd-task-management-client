@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import SocialIcons from '../../Components/SocialICons/SocialIcons';
-import logo from '../../assets/logo/rate-my-project-logo.png';
+import logo from '../../assets/logo/site-logo.png';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <img
             src={logo}
             loading='lazy'
-            className='w-[180px]'
+            className='w-[250px]'
           />
         </div>
 
