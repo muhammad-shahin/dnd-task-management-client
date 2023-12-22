@@ -10,8 +10,8 @@ const ParticlesBackground = () => {
     //await loadFull(engine);
     await loadFull(engine);
   }, []);
+  // eslint-disable-next-line no-unused-vars
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
   }, []);
   return (
     <Particles

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 const HowItWorksCard = ({ cardData, icon }) => {
   const { Title, Description } = cardData;
-  console.log(icon);
   return (
     <div className='rounded-lg text-center border-2 border-primary gradient-anim p-10 w-fit space-y-3 bg-transparent max-w-[450px] cursor-pointer flex justify-center items-start flex-col hover:text-white gradient-text duration-300'>
       <div className='round-bg mx-auto'>{icon}</div>

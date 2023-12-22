@@ -1,4 +1,5 @@
 import Root from '../layouts/Root/Root';
+import Dashboard from '../pages/Dashboard/Dashboard';
 import Error from '../pages/Error/Error';
 import Home from '../pages/Home/Home';
 import Login from '../pages/Login/Login';
@@ -22,6 +23,10 @@ const routes = [
       {
         path: '/login',
         element: <Login />,
+      },
+      {
+        path: '/dashboard',
+        element: <Dashboard />,
       },
     ],
   },

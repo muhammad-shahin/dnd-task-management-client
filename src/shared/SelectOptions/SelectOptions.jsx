@@ -11,10 +11,12 @@ const SelectOptions = ({
   defaultOption,
   message,
   defaultValue,
+  className,
+  containerClassName,
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className='w-full flex flex-col gap-2 my-3'>
+    <div className={`w-full flex flex-col gap-2 my-3 ${containerClassName}`}>
       <label className='text-[14px] font-medium'>
         {label}{' '}
         {isRequired && label && (
@@ -24,7 +26,7 @@ const SelectOptions = ({
       <div className='relative'>
         <select
           id='select'
-          className='w-[100%] border-2 border-gray px-5 py-2 text-[18px] font-medium focus:text-black text-gray placeholder:text-[16px] rounded outline-2 outline-secondary appearance-none  cursor-pointer'
+          className={`w-[100%] border-2 border-gray px-5 py-2 text-[18px] font-medium focus:text-black text-gray placeholder:text-[16px] rounded outline-2 outline-secondary appearance-none  cursor-pointer ${className}`}
           name={name}
           onChange={handleChange}
           required={isRequired}
@@ -55,9 +57,9 @@ const SelectOptions = ({
           className='absolute top-[50%] right-[20px] translate-y-[-50%]'
         >
           {open ? (
-            <BiSolidUpArrow className='text-text-gray text-[14px]' />
+            <BiSolidUpArrow className='text-[#a4a4a4] text-[14px]' />
           ) : (
-            <BiSolidDownArrow className='text-text-gray text-[14px]' />
+            <BiSolidDownArrow className='text-[#a4a4a4] text-[14px]' />
           )}
         </div>
       </div>
@@ -75,6 +77,8 @@ SelectOptions.propTypes = {
   optionsData: PropTypes.array,
   isRequired: PropTypes.bool,
   defaultValue: PropTypes.bool,
+  className: PropTypes.string,
+  containerClassName: PropTypes.string,
 };
 
 export default SelectOptions;
