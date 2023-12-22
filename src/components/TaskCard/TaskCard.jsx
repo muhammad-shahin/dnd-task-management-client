@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import SelectOptions from '../../shared/SelectOptions/SelectOptions';
 import { useState } from 'react';
 
 const TaskCard = ({ cardData, icon }) => {
@@ -35,11 +34,6 @@ const TaskCard = ({ cardData, icon }) => {
           <option value='Moderate'>Moderate</option>
           <option value='High'>High</option>
         </select>
-        {/* <SelectOptions
-          defaultOption='Low'
-          className={'lg:px-5 lg:py-1 pr-5 rounded-full'}
-          containerClassName={'my-0 w-auto'}
-        /> */}
       </div>
     </div>
   );
