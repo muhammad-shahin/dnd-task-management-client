@@ -26,7 +26,6 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         createToken(user.uid);
-        console.log(user);
         Swal.fire({
           position: 'center',
           icon: 'success',

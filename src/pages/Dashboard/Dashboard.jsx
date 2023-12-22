@@ -7,8 +7,11 @@ import SelectOptions from '../../shared/SelectOptions/SelectOptions';
 import Input from '../../components/Input/Input';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../providers/AuthProvider';
+import useAxios from '../../hooks/useAxios';
+import Swal from 'sweetalert2';
 
 const Dashboard = () => {
+  const secureAxios = useAxios();
   const { user } = useContext(AuthContext);
   const {
     register,
@@ -20,6 +23,23 @@ const Dashboard = () => {
   const onSubmit = (data) => {
     const newTask = { taskOf: user?.uid, status: 'todo', ...data };
     console.log(newTask);
+    secureAxios
+      .post('/add-task', newTask)
+      .then((res) => {
+        if (res.data.success) {
+          setModalStatus(false);
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'New Task Added Successfully',
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <section className='mx-[5%] lg:container lg:mx-auto py-20'>

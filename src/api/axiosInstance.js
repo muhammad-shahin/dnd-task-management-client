@@ -3,7 +3,7 @@ import axios from 'axios';
 const userData = JSON.parse(localStorage.getItem('userData'));
 
 const axiosInstance = axios.create({
-  baseURL: 'https://rate-my-project-server.vercel.app',
+  baseURL: 'http://localhost:5000',
   withCredentials: true,
 });
 

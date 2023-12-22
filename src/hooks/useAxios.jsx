@@ -2,11 +2,11 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import Swal from 'sweetalert2';
 import { signOut } from 'firebase/auth';
-import { auth } from '../configs/firebase.config';
+import { auth } from '../Configs/firebase.config';
 
 const userData = JSON.parse(localStorage.getItem('userData'));
 const secureAxios = axios.create({
-  baseURL: 'https://rate-my-project-server.vercel.app',
+  baseURL: 'http://localhost:5000',
   withCredentials: true,
 });
 
