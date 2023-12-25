@@ -10,6 +10,8 @@ import { AuthContext } from '../../providers/AuthProvider';
 import useAxios from '../../hooks/useAxios';
 import Swal from 'sweetalert2';
 import { useQuery } from '@tanstack/react-query';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Dashboard = () => {
   const secureAxios = useAxios();
@@ -63,7 +65,10 @@ const Dashboard = () => {
     secureAxios
       .put(`/update-task/${id}`, updatedInfo)
       .then((res) => {
-        console.log(res.data);
+        if (res.data) {
+          toast.success('✔ Task Updated Successfully');
+          refetch();
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -202,6 +207,7 @@ const Dashboard = () => {
           </div>
         </form>
       </CustomModal>
+      <ToastContainer />
     </section>
   );
 };

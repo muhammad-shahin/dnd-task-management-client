@@ -6,9 +6,14 @@ const TaskCard = ({ cardData, icon, handleUpdateTask }) => {
   const options = { day: 'numeric', month: 'short', year: 'numeric' };
   const formattedDate = date.toLocaleDateString('en-US', options);
   return (
-    <div className='rounded-lg border-2 border-primary gradient-anim p-5 w-fit space-y-3 bg-transparent max-w-[450px] cursor-pointer flex justify-center items-start flex-col hover:text-white gradient-text duration-300 group'>
+    <div className='rounded-lg border-2 border-primary gradient-anim p-5 w-fit space-y-3 bg-transparent max-w-[450px] flex justify-center items-start flex-col hover:text-white gradient-text duration-300 group'>
       {/* <div className='round-bg mx-auto'>{icon}</div> */}
-      <h2 className='md:text-3xl text-xl font-semibold duration-500 w-fit mx-auto capitalize'>
+      <h2
+        className='md:text-3xl text-xl font-semibold duration-500 w-fit mx-auto capitalize cursor-pointer'
+        title='Double Click To Start Editing'
+        contentEditable={true}
+        onChange={(e) => console.log(e)}
+      >
         {cardData?.taskTitle}
       </h2>
       <p className='md:text-md text-sm  md:font-medium max-w-sm group-hover:text-slate-100 text-primary duration-500'>

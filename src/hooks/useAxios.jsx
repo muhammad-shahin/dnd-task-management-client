@@ -6,7 +6,7 @@ import { auth } from '../Configs/firebase.config';
 
 const userData = JSON.parse(localStorage.getItem('userData'));
 const secureAxios = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://dnd-task-management-server.vercel.app',
   withCredentials: true,
 });
 
